@@ -1,164 +1,263 @@
 # 1. Security Program Management
-A structured approach for establishing security policies, procedures, and maintaining compliance
-Align security initiatives with business objectives
-Establishes a security-first culture
+
+A structured approach for establishing security policies, procedures, and maintaining compliance.
+
+- Aligns security initiatives with business objectives
+- Establishes a security-first culture
 
 ## Importance of Security Program Management
-Protects sensitive Data, IP, corporate reputation
-Mitigates financial and operational risk
-Legal issues
-Enhances org resilience through structured security workflows
+
+- Protects sensitive data, intellectual property (IP), and corporate reputation
+- Mitigates financial and operational risks
+- Helps prevent legal and compliance issues
+- Enhances organizational resilience through structured security workflows
 
 ## Key Components of a Security Program
-Governance and leadership
-Risk Management // good robust threath model
-Compliance and legal cosideration // relevant standards
-Continous improvemnet // should be baked the mechanism like knowledgebase
+
+### Governance and Leadership
+- Defines security roles, responsibilities, and oversight
+
+### Risk Management
+- Identifies and mitigates risks through robust threat modeling
+
+### Compliance and Legal Considerations
+- Ensures adherence to relevant laws, regulations, and industry standards
+
+### Continuous Improvement
+- Incorporates ongoing evaluation and improvement processes
+- Maintains updated documentation and knowledge bases
 
 ## Security Program Documentation
-Policies
-Standards
-Procedure
-Guidelines
 
-**Needs to be written in a way that all has access to the documentation**
+### Policies
+High-level statements defining organizational security expectations.
+
+### Standards
+Specific mandatory requirements supporting policies.
+
+### Procedures
+Step-by-step instructions for performing security tasks.
+
+### Guidelines
+Recommended best practices and optional guidance.
+
+> Documentation should be written clearly and made accessible to all relevant personnel.
 
 ## Implementing a Security Program
-Assess the current security posture
-Develop and implement policies and procedure
-Deploy security controls // can be firewalls or siem
-Offers security and awareness training // gives awareness to personnel
-Implement incident response and recovery // no such thing as 100% secure
+
+1. Assess the current security posture
+2. Develop and implement security policies and procedures
+3. Deploy security controls (e.g., firewalls, SIEM solutions)
+4. Provide security awareness and training programs
+5. Implement incident response and recovery processes
+
+> There is no such thing as 100% security.
 
 ## Best Practices for Security Program Management
-Align security strategies with business goals
-Foster cross-team collaboration
-Automate security monitoring and compliance tracking
-Regularly update documentation and conduct policy refreshers
+
+- Align security strategies with business goals
+- Foster cross-team collaboration
+- Automate security monitoring and compliance tracking
+- Regularly update documentation and conduct policy refreshers
+
+---
 
 # 2. Security Awareness Training
-Structured approach to educating employees
-Focuses on reducing human errors
-Cover key security principles such as phishing awareness, password security, etc
-Need to be related to your org
 
-## Why is Security Awareness Critical?
-85% of security breaches involve human factors
-Regulatory req. mandate regular security awareness training
-Stregthens overall cybersecurity resilience
+A structured approach to educating employees about cybersecurity risks and best practices.
+
+- Focuses on reducing human error
+- Covers phishing awareness, password security, social engineering, and more
+- Must be tailored to the organization
+
+## Why Security Awareness is Critical
+
+- Approximately 85% of security breaches involve human factors
+- Regulatory requirements often mandate regular security training
+- Strengthens overall cybersecurity resilience
 
 ## Common Cybersecurity Threats Addressed in Training
-Phishing
-Social Engineering
-Insider threats
-Malware and Ransomware
+
+- Phishing
+- Social Engineering
+- Insider Threats
+- Malware and Ransomware
 
 ## Implementing an Effective Security Awareness Program
-Need to be relevant to the org
-Assess organizational risk
-Develop engaging training modules // should be excited about the training
-Needs to be regular // should not be one and done
-Measuring effectives of training 
-Fostering security-first cultures
 
-## Security Awareness Best Pratices
-Regularly update
-Simulate real-world attacks
-Integrate into onboarding
-Encourage reporting
-Multiple methods
+### Assess Organizational Risk
+Identify threats most relevant to the organization.
 
-## How to Measure Success
-Track employee response to phishing simulation
-Monitor policy violations
-Analyze incident reporting trends // having baseline
+### Develop Engaging Training Modules
+Training should be interactive and engaging.
+
+### Conduct Regular Training
+Training should be continuous, not one-time only.
+
+### Measure Training Effectiveness
+Evaluate user performance and security improvements.
+
+### Foster a Security-First Culture
+Encourage security awareness throughout the organization.
+
+## Security Awareness Best Practices
+
+- Regularly update training materials
+- Simulate real-world attacks
+- Integrate security training into onboarding
+- Encourage incident reporting
+- Use multiple learning methods
+
+## Measuring Success
+
+- Track employee responses to phishing simulations
+- Monitor policy violations
+- Analyze incident reporting trends and baselines
 
 ## Security Awareness KPIs
-Phishing susceptibility rate
-Incident response effectiveness
-Employees engagement
+
+- Phishing susceptibility rate
+- Incident response effectiveness
+- Employee engagement levels
 
 ## Adapting Training Based on Metrics
-Identify knowledge gaps
+
+- Identify knowledge gaps
+- Adjust training content accordingly
+
+---
 
 # 3. Security Communication
-The process of conveying security policies, incidents, and procedures to relevant stakeholders
-Ensures clarity, compliance and efficiency
-Establishes transparency and trust
 
-## Why is Security Communication Critical
-Reduces confusion and misinterpretation of security policies
-Enhances incident response efficiency
-Helps meet regulatory compliance
+The process of conveying security policies, incidents, and procedures to relevant stakeholders.
+
+- Ensures clarity, compliance, and efficiency
+- Establishes transparency and trust
+
+## Why Security Communication is Critical
+
+- Reduces confusion and misinterpretation
+- Enhances incident response efficiency
+- Helps meet regulatory compliance requirements
 
 ## Communicating Security Incidents Effectively
-Initial notification // must have protocols
-Stakeholder identification // predefined
-Message creation // targeted and clear
-Informal dissemination // information flow freely
-Follow-up and resolution // learned
 
-## Best Practices for COmmunicating Security EVents
-Know Audience // technical vs non-technical audiance must be clear
-Clearly define communication roles and escalation process
-Avoid speculation // communicate facts only
+### Initial Notification
+- Follow predefined communication protocols
+
+### Stakeholder Identification
+- Identify relevant stakeholders in advance
+
+### Message Creation
+- Deliver targeted and clear communication
+
+### Information Dissemination
+- Ensure information flows appropriately
+
+### Follow-Up and Resolution
+- Share lessons learned and resolution details
+
+## Best Practices for Communicating Security Events
+
+- Know your audience (technical vs. non-technical)
+- Clearly define communication roles and escalation processes
+- Avoid speculation and communicate verified facts only
 
 ## Types of Security Reports
-Incident reports
-Compliance reports
-Risk assessment reports
-Executive summaries
+
+- Incident Reports
+- Compliance Reports
+- Risk Assessment Reports
+- Executive Summaries
 
 ## Management Commitment to Security Communication
-Commitment from management
-Culture of accountability in org
-Encourage employee to report any incident
+
+- Leadership commitment is essential
+- Promote a culture of accountability
+- Encourage employees to report incidents
 
 ## Strategies for Securing Management Commitment
-Regularly update executives on security threats and incidents
-Align security communication with business objectives
-Implement cybersecurity awareness program ata the leadership level
-Foster cross-dept collab
+
+- Regularly update executives on security threats and incidents
+- Align security communication with business objectives
+- Implement cybersecurity awareness programs for leadership
+- Foster cross-department collaboration
+
+---
 
 # 4. RACI Matrix
-Project management tool thsat defines roles and resposibilities within a team
-Ensure clarity with task and ownership
-R - responsible // the person doing the work
-A - accountable // the decision-maker with final ownership
-C - consulted // input before decision is made; subect matter expert
-I - informed
 
-## Why is RACI Matrix Important?
-Prevents confusion over task ownership
-Help communication channel clear
-Enhance collab and execution
-Provides structure
+A project management tool that defines roles and responsibilities within a team.
 
-## How to Create RACI Matrix
-Identify project tasks
-List team members and stakeholders // X and Y axis
-Assign RACI roles for each stakeholder
-Validate and align with team members
-Monitor and update regularly
+## RACI Definitions
+
+| Role | Meaning |
+|---|---|
+| **R - Responsible** | The person performing the work |
+| **A - Accountable** | The decision-maker with final ownership |
+| **C - Consulted** | Subject matter experts providing input before decisions |
+| **I - Informed** | Individuals kept updated on progress |
+
+## Why the RACI Matrix is Important
+
+- Prevents confusion over task ownership
+- Keeps communication channels clear
+- Enhances collaboration and execution
+- Provides organizational structure
+
+## How to Create a RACI Matrix
+
+1. Identify project tasks
+2. List team members and stakeholders
+3. Assign RACI roles for each task
+4. Validate and align assignments with the team
+5. Monitor and update regularly
 
 ## Key Benefits of RACI
-Provides role clarity
-Enhance accountability
-Streamlines
-Communication
+
+- Provides role clarity
+- Enhances accountability
+- Streamlines communication
+- Improves project coordination
 
 ## Common Challenges of RACI
-Overcomplication
-Lack of buy-in // everybody should be on board
-Resitant to change
+
+- Overcomplication
+- Lack of buy-in from stakeholders
+- Resistance to change
 
 ## Implementing RACI in Security Management
-Real-world application
-Enhanced security management
-Action plan for security teams
+
+- Supports real-world security operations
+- Enhances coordination within security teams
+- Establishes clear action plans and responsibilities
+
+---
 
 # 5. COBIT
-**Contorl Objectives for Information and Related Technologies**
-A structured framework for IT governance and management
-Align IT with business
-Focuses on risk management, compliance etc
+
+## Control Objectives for Information and Related Technologies (COBIT)
+
+A structured framework for IT governance and management.
+
+## Purpose of COBIT
+
+- Aligns IT with business objectives
+- Focuses on risk management and compliance
+- Improves governance and operational efficiency
+- Helps organizations manage and secure information systems
+
+## Key Focus Areas of COBIT
+
+- Governance
+- Risk Management
+- Compliance
+- Performance Management
+- Resource Optimization
+
+## Benefits of COBIT
+
+- Improves IT governance
+- Enhances risk management
+- Supports regulatory compliance
+- Aligns technology initiatives with business goals
