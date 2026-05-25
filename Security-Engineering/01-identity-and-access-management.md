@@ -1,210 +1,381 @@
-# Subject-Based Access Control
+# Subject-Based Access Control (SBAC)
 
-- User-based control: assign based on user
-- Process-based control: assign based on active process
-- Device-based control: assign based on trusted devices
-- Service-base control:
+## Types of Subject-Based Control
+- **User-based control** — Access assigned based on the user identity
+- **Process-based control** — Access assigned based on active processes
+- **Device-based control** — Access assigned based on trusted devices
+- **Service-based control** — Access assigned based on services or applications
 
-## Types of Subject Access Control1
-- DAC  - Discretionary // Owner gets to decide who gets access
-- MAC  - Mandatory // fix rules by admin
-- RBAC - Role-based // assigned roles
-- ABAC - Atribute-based // more flexible like time of day etc
+---
 
-##  Implementing Subject Access Control Policies
-- Least priveledge
-- Segmentation
-- Auditing and monitoring
-- MFA
+# Types of Subject Access Control
 
-## Challenges and Solution
-- Unathorized Access | Implement strict authentication controls
-- Insider Threats | Enforce role-based policies
-- Access Mismanagement | Conduct regular audits and apply automatic revocation
+## DAC — Discretionary Access Control
+- Resource owner decides who gets access
 
-## Tecnhologies Supporting Subject Access Control
-- IAM: provide centralized auth
-- PAM: manages and restrics high-priviledge accounts
-- Zero-trust: continous verification and auth
+## MAC — Mandatory Access Control
+- Access controlled through fixed rules set by administrators
 
-## Popular Tools
-- Okta: IAM
-- CyberArk: PAMM
-- Microsoft Entra ID: Conditional access and IAM
+## RBAC — Role-Based Access Control
+- Access assigned based on organizational roles
 
-## Subject Access Control Treands and Innovation
+## ABAC — Attribute-Based Access Control
+- Flexible access control using attributes such as:
+  - Time of day
+  - Location
+  - Device type
+  - User behavior
+
+---
+
+# Implementing Subject Access Control Policies
+
+- Follow the **Principle of Least Privilege (PoLP)**
+- Use network and system segmentation
+- Enable auditing and monitoring
+- Implement Multi-Factor Authentication (MFA)
+
+---
+
+# Challenges and Solutions
+
+| Challenge | Solution |
+|---|---|
+| Unauthorized access | Implement strict authentication controls |
+| Insider threats | Enforce role-based policies |
+| Access mismanagement | Conduct regular audits and apply automatic revocation |
+
+---
+
+# Technologies Supporting Subject Access Control
+
+## IAM — Identity and Access Management
+- Provides centralized authentication and authorization
+
+## PAM — Privileged Access Management
+- Manages and restricts high-privilege accounts
+
+## Zero Trust Security
+- Requires continuous verification and authentication
+
+---
+
+# Popular Tools
+
+- **Okta** — IAM platform
+- **CyberArk** — PAM solution
+- **Microsoft Entra ID** — Conditional access and IAM
+
+---
+
+# Subject Access Control Trends and Innovations
+
 - AI-driven access controls
 - Blockchain-based identity management
-- Context-aware policies
+- Context-aware access policies
 
-## Future Challenges for Subject Access control
+---
+
+# Future Challenges for Subject Access Control
+
 - Balancing security and usability
-- Integrating legacy with modern controls
-- Adapting to evolving compliance
+- Integrating legacy systems with modern controls
+- Adapting to evolving compliance requirements
 
-# Biometrics Authentication
+---
+
+# Biometric Authentication
+
+## Types of Biometrics
+
 - Fingerprint recognition
 - Facial recognition
-- Iris and Retina scanning
+- Iris and retina scanning
 - Voice recognition
 - Behavioral biometrics
 
-## Advantanges of Biometrics auth
-- Enhances security
+---
+
+# Advantages of Biometric Authentication
+
+- Enhanced security
 - Convenience
-- Speed and Effeciency
-- Non-transferrable
+- Faster authentication
+- Non-transferable credentials
 
-## Challenges of Biometrics auth
+---
+
+# Challenges of Biometric Authentication
+
 - Privacy concerns
-- False positives/negatives
-- Cost
-- Data breaches // cannot change
+- False positives and false negatives
+- High implementation costs
+- Data breaches (biometric data cannot be changed)
 
-## Best Practices
-- Combine with MFA
-- Protect with encryption and secure storage
-- Regular system audits
-- User consent and compliance
+---
 
-## Use Cases for Biometrics auth
-- Enterprise security // for employees
-- Banking and finance // for transaction
-- Healthcare // securing patient data
-- Mobile devices // unlock and auth payments
+# Best Practices for Biometric Authentication
 
-## Biometrics auth Trends and Innovations
-- AI-powered biometrics // accuracy
-- Contactless biometrics // hygiene
-- Decentralized
+- Combine biometrics with MFA
+- Protect biometric data using encryption and secure storage
+- Conduct regular system audits
+- Ensure user consent and regulatory compliance
+
+---
+
+# Use Cases for Biometric Authentication
+
+## Enterprise Security
+- Employee authentication and access control
+
+## Banking and Finance
+- Transaction verification and fraud prevention
+
+## Healthcare
+- Securing patient records and systems
+
+## Mobile Devices
+- Device unlocking and payment authentication
+
+---
+
+# Biometric Authentication Trends and Innovations
+
+- AI-powered biometrics
+- Contactless biometrics
+- Decentralized identity systems
 - Biometric payment systems
 
-## Future Challenges for Biometrics Auth
-- Ethical concerns // surveillance
-- Increased attacked // cannot be changed
-- Regulatory framework // adaptation with changes
+---
+
+# Future Challenges for Biometric Authentication
+
+- Ethical concerns and surveillance issues
+- Increasing biometric-based attacks
+- Evolving regulatory frameworks
+
+---
 
 # Secret Management
-Practice of storing sensitive info
+
+Secret management is the practice of securely storing and managing sensitive information.
+
+## Benefits
+
 - Prevents unauthorized data breaches
-- Support compliance
-- Reduce the risk of credential leaks // limits potential damage
+- Supports compliance requirements
+- Reduces the risk of credential leaks
+
+---
 
 # Common Secrets
-- API keys // access data
-- Database credentials // username and password to access data
+
+- API keys
+- Database credentials
 - Encryption keys
-- TLs/SSL certificates
+- TLS/SSL certificates
 
-## Best Practices for Secret Management
-- User secrets manager // like vaults AWS secret manager or Hashicorp vault
-- Encrypt sensitive data // protects secret at rest and in transit
-- Limit access // PoLP
-- Automates secret rotation // regularly rotate
-- Monitor and audit usage // track secret and detect anomalies
+---
 
-## Common Mistakes to Avoid
-- Hardcoding Secrets in Source Code | Risk of public exposure
-- Sharing Secrets via Email/Chat
-- Using Weak or Default creds 
+# Best Practices for Secret Management
 
-## Popular Tools for Secrets 
-- AWS Secret Manager | centralized secret storage for aws environment
-- HashiCorp Vault | secret managemnet and access policies
-- Azure Key Vault | Microsoft
-- CyberArk Conjur | secret for DevOps workflows
+- Use secrets managers such as:
+  - AWS Secrets Manager
+  - HashiCorp Vault
+- Encrypt sensitive data at rest and in transit
+- Limit access using PoLP
+- Automate secret rotation
+- Monitor and audit secret usage
 
-## Steps for Implementing Secure Secret Management
-1. Identify and classify sensitive creds
-2. Use a dedicated secrets management tools
-3. Apply strict access controls like RBAC and IAM policies
-4. Implementing logging and monitoring
-5. Regularly roate and update
+---
 
-## Emerging Trends in Secrets Management
-- Zero trust security models
-- Automated secrets rotation
+# Common Mistakes to Avoid
+
+| Mistake | Risk |
+|---|---|
+| Hardcoding secrets in source code | Public exposure |
+| Sharing secrets through email/chat | Credential leakage |
+| Using weak or default credentials | Unauthorized access |
+
+---
+
+# Popular Secret Management Tools
+
+- **AWS Secrets Manager** — Centralized secret storage for AWS
+- **HashiCorp Vault** — Secret management and access policies
+- **Azure Key Vault** — Microsoft cloud secret management
+- **CyberArk Conjur** — DevOps secret management
+
+---
+
+# Steps for Implementing Secure Secret Management
+
+1. Identify and classify sensitive credentials
+2. Use dedicated secret management tools
+3. Apply strict access controls using RBAC and IAM
+4. Enable logging and monitoring
+5. Regularly rotate and update secrets
+
+---
+
+# Emerging Trends in Secret Management
+
+- Zero Trust security models
+- Automated secret rotation
 - AI-powered anomaly detection
-- Decentralized identify and blockchain-based auth
+- Decentralized identity and blockchain authentication
 
-## Challenges
+---
+
+# Challenges in Secret Management
+
 - Increasing volume of secrets
-- Managing multicloud secret environments
-- Ensuring compliance
+- Managing multi-cloud environments
+- Maintaining compliance requirements
+
+---
 
 # Cloud IAM Access and Trust Policies
-- Provides centralized control over user access
-- Enhance security by enforcing least priveilege
-- Support compliance
 
-## Core Components of Cloud IAM Access and Trust Polcies
-- IAM users and groups // define roles and permission
-- IAM policies // define what action are allowed and denied
-- Trust policies // manage permission access over services
+## Benefits
 
-## IAM Policy Types
-- Identify-based policies // attach permission to users, groups or roles
-- Permission boundaries // guardrail
-- Resource-based policies // attaching to the resource itself
+- Centralized control over user access
+- Enhanced security through least privilege
+- Improved compliance support
 
-## Trust policies
-- Define which entity can assume a role
+---
+
+# Core Components of Cloud IAM and Trust Policies
+
+## IAM Users and Groups
+- Define users, groups, roles, and permissions
+
+## IAM Policies
+- Define allowed and denied actions
+
+## Trust Policies
+- Control access between services and accounts
+
+---
+
+# IAM Policy Types
+
+## Identity-Based Policies
+- Attached to users, groups, or roles
+
+## Permission Boundaries
+- Define maximum allowed permissions
+
+## Resource-Based Policies
+- Attached directly to cloud resources
+
+---
+
+# Trust Policies
+
+- Define which entities can assume roles
 - Enable federated access for external users
-- Support cross-account access between AWS services
+- Support cross-account access between cloud services
 
-## Best Pracitces for Cloud IAM and Trust Policies
-- Follow least privilege, grant only neccesary permission
-- use IAM roles
-- Monitor IAM usage, enable logging and auditng with CloudTrail
-- Rotate an expire credentials
+---
+
+# Best Practices for Cloud IAM and Trust Policies
+
+- Follow least privilege principles
+- Use IAM roles instead of long-term credentials
+- Monitor IAM activity using logging and auditing tools
+- Rotate and expire credentials regularly
 - Implement MFA
 
-## Common Pitfalls to Avoid
-- Overly permissive policies
-- Hardcoded credentials
-- Lack of policy monitoring
+---
 
-## Steps for Configuring IAM Policies
-1. Define user, roles and groups
-2. Create policies following least priviledge principle
-3. Attach policies to correct entity
+# Common Pitfalls to Avoid
+
+| Pitfall | Risk |
+|---|---|
+| Overly permissive policies | Excessive access |
+| Hardcoded credentials | Credential compromise |
+| Lack of monitoring | Undetected misuse |
+
+---
+
+# Steps for Configuring IAM Policies
+
+1. Define users, roles, and groups
+2. Create policies following least privilege
+3. Attach policies to correct entities
 4. Test and validate access
-5. monitor and audit policy usage
+5. Monitor and audit policy usage
 
-## Recommended IAM Tools
-- AWS IAM Access Analyzer | detects overly permissive policices
-- Google CloudI IAM | centralized policy manager
-- Azure RBAC | assign fine-grained permissions
+---
 
-## Emerging Trend in Cloud IAM and Trust POlicies
-- AI powered
+# Recommended IAM Tools
+
+- **AWS IAM Access Analyzer** — Detects overly permissive policies
+- **Google Cloud IAM** — Centralized policy management
+- **Azure RBAC** — Fine-grained permission assignments
+
+---
+
+# Emerging Trends in Cloud IAM and Trust Policies
+
+- AI-powered access management
 - Decentralized identity management
-- Adapative policies
-- Zero trust
+- Adaptive access policies
+- Zero Trust architectures
 
-## Challenges
-- Management IAM in multi cloud environment
-- Adapting IAm policies to evolving cybersecurity threat
-- Ensuring compliance
+---
 
-# Identity and Access Management Logging and Monitoring
-- provides visibility in user actions
-- helps detect unauthorized access and insider threats
-- support regulatory compliance req
+# Challenges in Cloud IAM
 
-## Key components of IAM logging and monitor
-- access logs // tracks who access what and when
-- audit logs // record security-related evenst
-- monitoring tools
+- Managing IAM across multi-cloud environments
+- Adapting policies to evolving cybersecurity threats
+- Maintaining regulatory compliance
 
-## Key IAM and Monitoring Types
-- Event logs // capture system-wide act
-- Authentication logs // tracks user login attempts
-- Authorization logs // log granted and denied attempts
-- Session logs // record active user session and duration
+---
 
-## Common Logging Toools
-- AWS CloudTrail | Tracks API calls and access req
-- Google Cloud Logging | Monitors identity related events
-- Micro Entra ID logs | Logs windows based authentication and authorization logs
-- Splunk | Aggregates and analyzes security logs from multiple sources
+# Identity and Access Management (IAM) Logging and Monitoring
+
+## Importance
+
+- Provides visibility into user actions
+- Detects unauthorized access and insider threats
+- Supports regulatory compliance requirements
+
+---
+
+# Key Components of IAM Logging and Monitoring
+
+## Access Logs
+- Track who accessed what and when
+
+## Audit Logs
+- Record security-related events
+
+## Monitoring Tools
+- Analyze and alert on suspicious activities
+
+---
+
+# Common IAM Log Types
+
+## Event Logs
+- Capture system-wide activities
+
+## Authentication Logs
+- Track login attempts and authentication events
+
+## Authorization Logs
+- Record granted and denied access attempts
+
+## Session Logs
+- Monitor active user sessions and durations
+
+---
+
+# Common Logging Tools
+
+- **AWS CloudTrail** — Tracks API calls and access requests
+- **Google Cloud Logging** — Monitors identity-related events
+- **Microsoft Entra ID Logs** — Authentication and authorization logging
+- **Splunk** — Aggregates and analyzes security logs
