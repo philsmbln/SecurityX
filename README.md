@@ -38,6 +38,15 @@ Focuses on cybersecurity governance, policies, risk management, compliance frame
 
 Focuses on secure system design, infrastructure planning, and enterprise architecture principles.
 
+### Contents
+
+- `01-resilient-systems-designs.md`
+- `02-security-design-and-integration.md`
+- `03-security-controls.md`
+- `04-access-authentication-and-authorization.md`
+- `05-cloud-and-containerization-security.md`
+- `06-zero-trust-design.md`
+
 ### Topics Covered
 
 - Defense in depth
