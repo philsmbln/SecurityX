@@ -379,3 +379,174 @@ Secret management is the practice of securely storing and managing sensitive inf
 - **Google Cloud Logging** — Monitors identity-related events
 - **Microsoft Entra ID Logs** — Authentication and authorization logging
 - **Splunk** — Aggregates and analyzes security logs
+
+## Best Practices for IAM Logging and Monitoring
+- Enable centralzied looging
+- User real-time monitoring
+- Implement access alerts
+- Regularly audit logs // identify potential security gaps
+
+## Common Challenges
+- Log overload | Use filtering and correlation tech
+- Insider threats | implemetn behavior-based anomaly detection
+- Compliance req | Automate audit log collection and retention
+
+## Steps for Implementing Logging and Monitoring
+1. Identify critical access points and sensitive data
+2. Configure logging for IAM policies and auth events
+3. Integreate logs with SIEM systems
+4. Setup alerts for unathorized access attempts
+5. Regularly review and continous improvements
+
+## Security Framework Alignment
+- NIST 800-53 // security and privacy controls
+- ISO 27001 // international standard for information security management
+- SOC 2 // compliance for service org handling sensitive customer data
+
+## Emerging Trends in IAM Logging and Monitoring
+- AI-driven threat detertion
+- Zero trust
+- Automated incident response
+- Decentralized identity management
+
+## Challenges Ahead
+- Managing multicloud IAM
+- Adapting to evolving compliance reqs
+- Balacing security and performance
+
+# Priveleged Identity Management(PIM)
+- Protects critical IT systems and sensitive data
+- Reduce the risk of insider threat and credential misuse
+- Helps ensure compliance req
+
+## Core Components of PIM
+- Just-in-time access
+- RBAC // assign permission based on user roles
+- Auditing and monitoring // tracks privilege users
+
+## Best pratices
+- Least privilege principle
+- MFA
+- Privileged access workstation or PAW
+- Session minitoring and recording
+- Automated role revocation
+
+## Common pitfalls
+- Overprivileged accounts | Implement least privilege
+- Weak authentication methods | Enforce MFA
+- Lack of Monitoring | Utilize SIEM tools for continous oversight
+
+## Steps for Implementing PIM
+- Identify privileged accounts
+- Define access policies
+- Implement access controls
+- Monitor and audit activity
+- Automate access revocation
+
+## Tools for Managing Priveleged Identities
+- CyberArk | Secure privileged accounts
+- Microsoft Entra PIM | for microsoft
+- BeyondTrust | Offers privileged session management
+- ManageEngine PAM | Manages and audits privileged access
+
+## Emerging Trends for PIM
+- Zero Trust security Models
+- AI-driven access controls // automate
+- Passwordless auth
+- Cloud-native PIM solutions // for cloud environment
+
+## Challenges for PIM
+- Balancing security with operational efficiency
+- Adapting to hybrid and multicloud infrastructures
+- Regulatory compliance and compliance demands
+
+# Enterprise Authentication
+- Foundational part of security
+- Protects sensitive enterprise data
+- Enhance security posture
+- Enables regulatory compliance
+
+## Core Authentication Methods
+- SSO // centralized user authentication
+- MFA // adds additional security layer
+- Federated auth // allows users to access diff systems
+
+## Key Enterprise Authentication Protocols
+- SAML // Security Assertions Markup Language, used for SSO in web applications
+- OpenID connect // identiy layer for federated auth
+- Kerberos // secure authentication using tickets
+- EAP // common for wireless networks
+
+## IAM Solutions
+- Microsoft Entra ID | Enterprise identity and access management
+- Okta | Identity and SSO
+- Ping Identity | Cloud
+- CyberArk | PAM
+
+## Implementing Enterprise Auth
+- Use MFA
+- Adopt Zero trust principles
+- Monitor and audit auth logs
+- Regularly rotate and review creds/auths
+
+## Challenges and Solutions
+- Password Fatigues | Implement passwordless auth
+- Credential theft | Enforce MFA
+- Legacy System Integration | Use federated auth solutions, bridging modern and legacy
+
+## Emerging trends
+- Biometric auth
+- Decentralzied identity management
+- AI-driven auth // detecting anomalies in realtime
+- Passkeys and passwordless auth
+
+## Challenges Ahead
+- Adapting to evolving cybersecurity threats
+- Balancing security with user experience
+- Ensuring compliance with global data regulations
+
+# Enterpise Authorization
+- Defining who and what can access enterprise
+- Reduce insider threats by enforcing access policies
+- Ensure compliance with regulatory standards
+- Enhances security posture
+
+## Core Authorization Frameworks
+- RBAC // assigns permission based on predefined roles
+- ABAC // dynamically grants access
+- PBAC // uses policies
+
+## Key Authorization Protocols
+- OAuth 2.0 for API auth
+- SAML for federated identity
+- OpenID connect // extends OAuth for authentication and authorization
+- Kerberos // provides secure authenticaiton for enterprise networks for windows based systems
+
+## Authorization Models
+- DAC // User defines access rights
+- MAC // Access is enforced on classification levels
+- RBAC
+- ABAC
+
+## Best Practices
+- PoLP
+- MFA
+- Implement role-based and attribute-based controls
+- Continously audit access logs 
+- Just in time access controls
+
+## Common challenges
+- Excessive Privilege | Implement least privilege
+- Lack of Access Audits | Automate and schedule regular reviews
+- Weak Authorization Policies | Use centralzied identiy governance solutions
+
+## Emerging Trends
+- Zero Trust security model
+- AI-driven authorization decisions
+- Decentralized identity systems
+- Federation
+
+## Challenges Ahead
+- Managing auth in multicloud environment
+- Evolving compliance req and enforcement
+- Integrating legacy and modern identity framework
