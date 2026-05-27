@@ -1,158 +1,201 @@
 # Server Application Control
-- Protects server from unauthorized software execution
-- Reduces attack surfaces by limiting apps // proactively block
-- Ensure compliance with security policies
+- Protects servers from unauthorized software execution
+- Reduces attack surfaces by limiting applications proactively
+- Ensures compliance with security policies
 
-## Key Features fo Server Application Control
-- Whitelisting and Blacklisting // allows and blocks specific apps
-- Real-time monitoring // tracks apps behavior
-- Policy enforcement // ensures adherence to security guidelines
+## Key Features of Server Application Control
+- **Whitelisting and Blacklisting** — Allows or blocks specific applications
+- **Real-time Monitoring** — Tracks application behavior
+- **Policy Enforcement** — Ensures adherence to security guidelines
 
-## Best Practices of Server Application Control
+## Best Practices for Server Application Control
 - Define application policies
-- Use digital signatures // signed softwared ensures
-- Apply least privilege princiiple // limiting access
-- Monitor and log activiies // detect suspicious activiies
+- Use digital signatures to verify trusted software
+- Apply the Principle of Least Privilege (PoLP)
+- Monitor and log activities to detect suspicious behavior
 
-## Common Challenges and Solution
-- Shadow IT | Enforce strict whitelisting policies
-- Application Vuln | Implement patch management and security updates
-- Performance overhead | Optimize scanning intervals and exclude safe apps
+## Common Challenges and Solutions
 
-## Implement Server Application Control
-1. Identify business critical application
-2. Establish contorl policies // define which should be allowed and blocked
-3. Deploy security tools // such as trend micro or bitdefender
-4. Continously monitor usage // logs and analyze
+| Challenge | Solution |
+|---|---|
+| Shadow IT | Enforce strict whitelisting policies |
+| Application Vulnerabilities | Implement patch management and security updates |
+| Performance Overhead | Optimize scanning intervals and exclude trusted applications |
+
+## Implementing Server Application Control
+1. Identify business-critical applications
+2. Establish control policies defining allowed and blocked applications
+3. Deploy security tools such as Trend Micro or Bitdefender
+4. Continuously monitor application usage and analyze logs
 
 ## Recommended Security Tools
-- Trend Micro Deep Security | monitor and enforce
-- Bitdefencer Gravity Zone | Block unathorized apps on serves
+- Trend Micro Deep Security — Monitoring and policy enforcement
+- Bitdefender GravityZone — Blocks unauthorized applications on servers
 - BeyondTrust Application Control
 
-## Case Study - Application Control in Financial Services
+## Case Study — Application Control in Financial Services
 - Deployed Trend Micro Deep Security for application whitelisting
-- Enforced strict policies allowing only digitally signed applicaitons
-- Conducted periodic review and audits of server apps logs
+- Enforced strict policies allowing only digitally signed applications
+- Conducted periodic reviews and audits of server application logs
 
-# EDR - Endpoints Detection and Response
-- Continous monitoring and automated response
-- Detects and mitigates endpoint threats in real-time
-- Improves incident response with automated containemnt measures
-- Supports forensic analysis for security investigaitons
+---
+
+# EDR — Endpoint Detection and Response
+- Continuous monitoring and automated response capabilities
+- Detects and mitigates endpoint threats in real time
+- Improves incident response through automated containment
+- Supports forensic analysis during security investigations
 
 ## Core Capabilities of EDR
 - Threat detection
-- Incident inventigation // provides detailed insights into security events
-- Automated response // isolates compromised endpoints
+- Incident investigation with detailed security insights
+- Automated response such as endpoint isolation
 
 ## Key Components of EDR Solutions
-- Behavioral analytics // doesn't rely on signatures
-- Real-time monitoring // continously monitors endpoints devices
-- Threat intelligence integration // stay informed on current threats
-- Automate threat response // minimize damage
+- **Behavioral Analytics** — Detects suspicious behavior without relying solely on signatures
+- **Real-time Monitoring** — Continuously monitors endpoint devices
+- **Threat Intelligence Integration** — Keeps systems updated on emerging threats
+- **Automated Threat Response** — Minimizes damage from attacks
 
 ## Implementing EDR in an Enterprise Environment
-- Access organizational needs
-- Select the right EDR solution // based on your needs
-- Deploy across endpoints
-- Configure real-time alerts
-- Conduct regular threat simulations
+1. Assess organizational security needs
+2. Select the appropriate EDR solution
+3. Deploy across endpoints
+4. Configure real-time alerts
+5. Conduct regular threat simulations
 
 ## Top EDR Solutions
-- Crowdstrike Falcon | AI-driven threat detection and response
-- Microsoft Defender for Endpoint | Cloud-based endpoint protection and analytics // seamlessly integrates with M365
-- Trellix EDR | Threat intelligence integration and forensic capabilities
-- Cisco Secure Endpoint | Zero-trust security approach with automated mitigation
+- CrowdStrike Falcon — AI-driven threat detection and response
+- Microsoft Defender for Endpoint — Cloud-based endpoint protection integrated with Microsoft 365
+- Trellix EDR — Threat intelligence and forensic capabilities
+- Cisco Secure Endpoint — Zero-trust security with automated mitigation
 
 ## EDR in Action (Case Study)
-- Deployed Microsft Defender for Endpoint
-- Configure behavioral analytics
-- Setup automated containment
-- Saw a 60% reduction in phishing attacks
+- Deployed Microsoft Defender for Endpoint
+- Configured behavioral analytics
+- Set up automated containment
+- Achieved a 60% reduction in phishing attacks
 
-# Event Loggign and Monitoring
-- Capturing, storing and alalyzing system logs to detect security threats
+---
+
+# Event Logging and Monitoring
+- Capturing, storing, and analyzing system logs to detect security threats
 - Helps identify security incidents
-- Aids in forensic investigations
-- Provides real-time insigth
+- Supports forensic investigations
+- Provides real-time insights into system activity
 
 ## Core Components of Event Logging and Monitoring
-- Log Collection // Captures systems and apps events
-- Log Aggregation // Centralize log data from multiple sources
-- Log Analysis // uses automated tools to detect anomalies
-- Alerting and Reporting // generate reports
+- **Log Collection** — Captures system and application events
+- **Log Aggregation** — Centralizes logs from multiple sources
+- **Log Analysis** — Detects anomalies using automated tools
+- **Alerting and Reporting** — Generates notifications and reports
 
-## Key Components
-- System logs // track OS-level events
-- Application logs // monitor software activity
-- Security logs // record authentication attempts and security-releted events
-- Network logs // capture traffic and connectivity data
+## Key Log Types
+- **System Logs** — Track operating system events
+- **Application Logs** — Monitor software activity
+- **Security Logs** — Record authentication attempts and security-related events
+- **Network Logs** — Capture traffic and connectivity activity
 
 ## Key Logging and Monitoring Tools
-- Splunk | Real-time data analysis and visualization
-- ELK stack | Open-source log collection and analysis
-- ManageEngine | Comprehensive event log monitoring
-- Graylog | Scalable log management and alerting // powerful alerting features
+- Splunk — Real-time log analysis and visualization
+- ELK Stack — Open-source log collection and analysis
+- ManageEngine — Comprehensive event log monitoring
+- Graylog — Scalable log management with advanced alerting
 
-## Implementation
-- Enable centralized logging // streamline analysis
-- Define retention policies // how long to be archive
+## Implementation Best Practices
+- Enable centralized logging
+- Define log retention policies
 - Automate anomaly detection
 - Establish incident response workflows
 
-## Common challenges and solutions
-- Excessive log noise | Use filtering and log parsing techniques
-- Compliance reqs | Implemnet standardizsed logging frameworks
-- Delay Threat Detection | Enable real-time log monitoring and alerts
+## Common Challenges and Solutions
 
-## Sample case study (Healthcare Org)
+| Challenge | Solution |
+|---|---|
+| Excessive Log Noise | Use filtering and log parsing techniques |
+| Compliance Requirements | Implement standardized logging frameworks |
+| Delayed Threat Detection | Enable real-time monitoring and alerts |
+
+## Sample Case Study (Healthcare Organization)
 - Deployed Splunk for centralized log collection and analysis
-- Implemented automated alerts
-- Establish a structured incident
+- Implemented automated alerting
+- Established a structured incident response workflow
+
+---
 
 # Endpoint Privilege Management
-- Controlling user permission on devices to reduce the risk of unauthorized access and malware
-- Prevent privilege escalation attacks
-- Reduce attacks surface
-- Enhance compliance with security policies
+- Controls user permissions on devices to reduce unauthorized access and malware risks
+- Prevents privilege escalation attacks
+- Reduces attack surfaces
+- Enhances compliance with security policies
 
 ## Core Components
-- Just-in-time access // grants privileges only when necessary
-- Application control // restricts execution of unauthorized apps
-- Role-based access // only assigns users based on roles
+- **Just-in-Time (JIT) Access** — Grants privileges only when needed
+- **Application Control** — Restricts unauthorized applications
+- **Role-Based Access Control (RBAC)** — Assigns permissions based on user roles
 
-## Best Pratices for Endpoint Privilege Managemnet
-- Apple PoLP
-- User privilege access workstations (PAWS)
-- Monitor privelege escalation
-- Implement MFA
+## Best Practices for Endpoint Privilege Management
+- Apply the Principle of Least Privilege (PoLP)
+- Use Privileged Access Workstations (PAWs)
+- Monitor privilege escalation attempts
+- Implement Multi-Factor Authentication (MFA)
 
 ## Common Challenges and Solutions
-- Excessive User Privilege | Enforce strict privelge policies
-- Unauthorized Software Installations | Implement application control mechanisms
-- Lack of Visibility | Use centralized privilege monitoring tools
 
-## Implementing Endpoint
+| Challenge | Solution |
+|---|---|
+| Excessive User Privileges | Enforce strict privilege policies |
+| Unauthorized Software Installations | Implement application control mechanisms |
+| Lack of Visibility | Use centralized privilege monitoring tools |
+
+## Implementing Endpoint Privilege Management
 1. Identify high-risk endpoints
 2. Define privilege policies
-3. Deploy provilege management tools
-4. Monitor and audit privilege actitivies
+3. Deploy privilege management tools
+4. Monitor and audit privileged activities
 
-## Top Tools 
-- CyberARK | Just-in-time access, role-based control
-- BeyondTrust | Application allow-listing, risk-based escalation
-- ManageEngine | Automated privilege auditing and reporting
+## Top Tools
+- CyberArk — Just-in-time access and role-based control
+- BeyondTrust — Application allow-listing and risk-based escalation
+- ManageEngine — Automated privilege auditing and reporting
+
+---
 
 # Attack Surface Monitoring and Reduction
-- Identifying, assessing and mitigating security vuln within an org digital assets
-- Reduce likelihood of cyberattacks by minimizing entry points
-- Provides continous visibility into external and internal risks
-- Ensure compliance with cybersecurity best practices
+- Identifies, assesses, and mitigates vulnerabilities within organizational digital assets
+- Reduces the likelihood of cyberattacks by minimizing entry points
+- Provides continuous visibility into external and internal risks
+- Ensures compliance with cybersecurity best practices
 
 ## Key Components
-- Asset discovery // identifying all digital assets within an org
-- Threat intelligence // understanding evolving attack vectors
-- Continous monitoring // automating the detection of vuln
+- **Asset Discovery** — Identifies all digital assets within the organization
+- **Threat Intelligence** — Tracks evolving attack vectors and threats
+- **Continuous Monitoring** — Automates vulnerability detection and assessment
 
-## Techniques for Attack Surface Reductions
+## Techniques for Attack Surface Reduction
+- Remove unused services and applications
+- Disable unnecessary ports and protocols
+- Apply regular patch management
+- Enforce strong authentication methods
+- Implement network segmentation
+- Use firewalls and endpoint protection
+- Conduct regular vulnerability assessments and penetration testing
+
+## Common Tools for Attack Surface Monitoring
+- Palo Alto Networks Cortex Xpanse
+- Microsoft Defender External Attack Surface Management
+- Tenable Attack Surface Management
+- Rapid7 InsightVM
+
+## Best Practices
+- Maintain an updated asset inventory
+- Continuously monitor external-facing assets
+- Conduct regular security assessments
+- Apply least privilege access controls
+- Automate vulnerability remediation where possible
+
+## Sample Case Study
+- Implemented attack surface monitoring tools to identify exposed services
+- Reduced unnecessary internet-facing assets
+- Automated vulnerability scanning and remediation
+- Improved overall security posture and compliance readiness
