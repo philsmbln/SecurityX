@@ -174,18 +174,26 @@
 
 ## Techniques for Attack Surface Reduction
 - Remove unused services and applications
+- Apply Zero trust principles
+- Enforce least privilege
 - Disable unnecessary ports and protocols
 - Apply regular patch management
 - Enforce strong authentication methods
 - Implement network segmentation
 - Use firewalls and endpoint protection
 - Conduct regular vulnerability assessments and penetration testing
+- Use cloud security posture management (CPSM)
+
+## Common Challenges and Solution
+- Shadow IT | Implement automated asset discovery tools
+- Cloud Misconfigurations | Use CSPM for continous security assessment
+- Third-Party Risk Exposure | Conduct vendor risk assessments
 
 ## Common Tools for Attack Surface Monitoring
-- Palo Alto Networks Cortex Xpanse
-- Microsoft Defender External Attack Surface Management
-- Tenable Attack Surface Management
-- Rapid7 InsightVM
+- Palo Alto Networks Cortex Xpanse | Continous discovery and threat exposure
+- Microsoft Defender External Attack Surface Management | Automated attack surface assessment
+- Tenable Attack Surface Management | Third-party risk visibility and assessment
+- Rapid7 InsightVM | Comprehensive digital asset mapping
 
 ## Best Practices
 - Maintain an updated asset inventory
@@ -194,8 +202,103 @@
 - Apply least privilege access controls
 - Automate vulnerability remediation where possible
 
-## Sample Case Study
+## Sample Case Study (Financial Services)
+- Deployed Palo Alto Cortex Xpanse for external asset visibility
 - Implemented attack surface monitoring tools to identify exposed services
 - Reduced unnecessary internet-facing assets
 - Automated vulnerability scanning and remediation
 - Improved overall security posture and compliance readiness
+
+# HIPS and HIDS
+- Host-based intrusion prevention system // a security mechanism that actively prevents unathorized actions on a host system
+- Host-based intrusion detection system // 
+
+## Why HIPS and HIDS are Important
+- Protect critical systems from malware an unauthorized access
+- Monitor real-time activities to detect malicious behaviors
+- Reduces the impact of security breaches 
+
+## Key Differences between HIPS and HIDS
+- HIPS | Preventive | Blocks malicious activity | Active security enforcement
+- HIDS | Detective | Monitors and alerts on suspicious activity | 
+
+## Implementing HIDS and HIDS
+- Assess security reqs
+- Choose the right tools // evaluate available tool
+- Deploy across hosts // ensure org-wide coverage
+- Configure policies and rules // define detection and prevention param
+- Monitor and update regularly // reviewing alerts 
+
+## Commonly Used Tools for HIPS and HIDS
+- OSSEC | HIDS | Open-source
+- Snort | HIDS | Signature-based network and host monitoring
+- Windows defender ATP | HIPS | Real-time protection, advatanced threat prvention
+- McAfee Host IPS | HIPS | Prevents exploits and blocks malicious apps
+
+## HIPS and HIDS Use Cases
+- Enterprise security // protects endpoint devices from unathorzied access
+- Cloud workloads // secure cloud-based virtual machine 
+- Regulatory compliance
+
+## HIPS and HIDS Challenges and Solutuions
+ Challenges | Solutuions
+- False Positives | Fiune rules and polcies for accuracy Optimize resource allocation and configuration
+- Performance Impact | Optimize resource allocation and config
+- Complexity in Deployment
+
+## Future trends
+- AI-driven threat detection // improve accuracy
+- Cloud-native HIDS and HIDS 
+- Behavioral analysis integration // detects deviation from normal system behavior
+- Increased automation
+- Greater reliance on cloud solutions
+- Enhanced integration with SIEM platforms for real-time response
+
+# Anti-Malware Solutions
+- Software tools to prevent, detect and remove malicious software // scan files 
+- Prevent unauthorized access to sensitive data
+- Protect endpoints from malicious attacks
+- Reduce system vuln and downtime // make operation
+
+## Types of Malware Detected
+- Viruses // self-replicating code that infect files
+- Worms // spreads across netowkrs without user interaction
+- Ransonware
+- Trojans
+- Spyware
+
+## Key Features of Anti-Malware Solutions
+- Real-time protection
+- Behavioral analysis
+- Sandboxing
+- Cloud-based threat intelligence
+- Automated updates // automatically update definitions
+
+## Common Anti-Malware Solutions
+- Bitdefender | AI-powered threat detection, network security
+- Malwarebytes | Real-time malware protection, hearistic scanning
+- Windows Defender | Built-in Windows protection, cloud-based scanning
+- Norton Security | multi-layered malware defence, password manager
+
+## Implementing an Effective Anti-Malware Strategy
+- Keep software up to date
+- Enable real-time scanning
+- Conduct routine system scans
+- Use multi-layered security
+- Educate users 
+
+## Common Challenges
+- Zero Days Attack | AI-driven behavioral detection
+- Performance impact | Optimize scanning sched and exclusions
+- False Positiive | Regularly update whitelist sand refine detection rules
+
+## Future trends
+- AI-powered threat detection
+- Zero trust security
+- Behavior-based detection
+- Cloud-based protection
+- Automated threat hunting
+- Blockchain technology
+- Ransomware defenses
+
+## 
