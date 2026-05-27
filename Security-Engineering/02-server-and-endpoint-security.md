@@ -155,4 +155,4 @@
 - Threat intelligence // understanding evolving attack vectors
 - Continous monitoring // automating the detection of vuln
 
-## 
+## Techniques for Attack Surface Reductions
