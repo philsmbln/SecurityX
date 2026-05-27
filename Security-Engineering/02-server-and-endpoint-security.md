@@ -301,4 +301,67 @@
 - Blockchain technology
 - Ransomware defenses
 
-## 
+## Security Enhanced Linux (SELinux)
+- Security architecture integrated into the Linux kernel
+- Enhances Linux system security by enforcing strict access controls
+- Reduces the risk of privilege escalation and unauthorized mod
+- Protects against exploits
+
+## Core SELinux Components
+- Policies // define how apps interacts with system resources
+- Modes // enforcing, permissive and disabled are 3 modes
+- Labels // assign security contexts to processes and files
+
+## SELinux Policies
+- Targeted policy // default policy that confines select processes
+- Strict policy // MAC policies across the entire system
+- MLS policy // multi-layered for security for classified environments
+
+## Configuring SELinux Policies
+- Check status // cmd sestatus
+- Change mode // cmd setenforce 0 (Permissive) . setenforce 1 (Enforcing)
+- List policies // semanage fcontext -l
+- Modify file contexts // restorecon -Rv /path
+- Allow denied actions // audit2allow -a -M policy && semodule -i mypolicy.pp
+
+## Best Practices for Implementing SELinux
+- always run in enforcing mode
+- use targeted policy
+- monitoring logs
+- test policies in permissive mode
+- use selinux boolean settings
+
+## Challenges and Solutions
+1. Application blocks | use audit2allow to generate necessary policy rules
+2. Performance overhead | optimize policies and disable unnecessary logging
+3. Complex config | Utilize semange and setsebool for easier management
+
+## Common SELinux Use Cases
+- Webserver protection // restricts Apache, nginx, and other services from unauthorized file access
+- Container security // confines Docker and Podman processes for enhanced isolation
+- Database hardening // ensure database proceses only access necessary files
+- Multi-tenant hosting // enforces data separation between different users
+
+# Host-Based Firewalls
+- Security solutions installed directly on individual endpoints
+- Protect against unathorized access and malware threats
+- Provide granural control over application-level traffic
+- Complement network firewalls for a multi-layered protection
+
+## Core Functions
+- Packet filtering // controls data flow based on pre-defined rules
+- Application control // restricts access on certain apps
+- Logging and monitoring // track security events and rule enforcement
+
+## Configuring a Host-Based Firewall
+1. Asses security req
+2. Choose a firewall solution
+3. Define firewall rules
+4. Enable logging
+5. Regularly update policies // adapt to emerging org needs
+
+## Commonly used Host-based Firewalls
+- Windows Firewall | Integrated windows security
+- UFW (Uncomplicated Firewall) | Simple Linux-based firewall management
+- iptables | Advanced Linux firewall customization
+- pfSense | Open-source firewall for robust traffic management
