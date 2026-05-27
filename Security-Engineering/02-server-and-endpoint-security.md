@@ -365,3 +365,154 @@
 - UFW (Uncomplicated Firewall) | Simple Linux-based firewall management
 - iptables | Advanced Linux firewall customization
 - pfSense | Open-source firewall for robust traffic management
+
+## Host-based firewall beset practices
+- Enable default deny
+- Limit administrative access
+- monitor firewall logs
+- Apple PoLP
+- Integrate with SIEM solutions
+
+## Challenges and Solutins
+- Managing Firewall Rules | Use automation tools for policy enforcement
+- Performance Overhead | Optimize rulesets to minimize CPU load
+- False positives
+
+# Browser Isolation
+- Seperate web browsing activiity from endpoint devices
+- Prevents malicious scripts from executing on local machine
+- Reduces the risk of phising and drive-by downloads
+- Ensure compliance
+
+## Types of Browser Isolation
+- Remove browser isolation (RBI)
+- Client-side isolation // runs browsing activity in a secure, local virtual container
+- Network-based isolation // uses proxies or gateways
+
+## Implementation Strategies for Browser isolation
+- Policy-based isolation
+- Cloud-based solutions
+- Containerization
+- Integration with zero trust
+
+## Common Browser Isolation Solutions
+- Kasm Workspaces
+- Cloudflare
+- Zscaler Internet Access        
+- Netskope RBI
+
+## Best practices for implementing browser isolation
+- User remote browser isolation
+- implement PoLP
+- Enable content disarming and reconstruction CDR
+- monitor and log browser activity
+
+## Challenges and Solution
+- Performance Overhead | Optimize resource allocation and compression
+- User Resistance | Educate on security benefits and usability benefits
+- Integration Complexity
+
+# Sever Configuration Management
+- Maintaining, controlling and automating conf
+- Ensures system reliability and performance
+- Reduces security risks from misconfig
+- Enable automation and reduces manual errors
+- Improves scability
+
+## Why Server Configuration Management is Important
+- version control
+- Automation
+- Compliance enforcement
+
+## Best Practices for Server COnfiguration Managemnet 
+- Use Infrastructure as code IaC
+- Implement change management policies
+- Perform continous monitoring and auditing
+- Enforce least privilege
+- Use backup and restore mechanism
+
+## Commong Challenge and Solution
+- Configuration Drift | Implement autoamted policy enforcement
+- Manual Errors | Use autoamted configuration management tools
+- Compliance violations | Execute regular audits and real-time monitoring
+
+## Tools for Server Configuration Management
+- Ansible | Agentless automation and configuration management
+- Puppet | Declarative infrastructure management and compliance conforcement
+- Chef | Policy-based configuration automation and security
+- SolarWinds SCM | Real-time configuration monitoring and alerts
+
+## Implementing Server Configuration Management
+- Assess infrastructure needs
+- Select appropriate tools
+- Define baseline conf
+- Automate policy enforcement // use scripts
+- Monitor and audit changes // track modification and remediate issues proactively
+
+## Mobile Device Management MDM
+- Enables org to monitor, manage and secure employees mobile devices
+- Protects sensitive corporate data
+- Ensure compliance with security policies
+- Manages devices conf remotely
+
+## Key MDM Functions
+- Device enrollment and inventory management
+- Policy enforcement and security configuration
+- Remote lock and wipe capabilities
+- Application and content management
+
+## Core Features of MDM Solutions
+- Device compliance monitoring
+- Geofencing and location tracking
+- Remote troubleshooting
+- Data loss prevention (DLP)
+- Multi-platform support
+
+## Common MDM Solutions
+- Microsoft Intune | cloud-based solution
+- VMware workspace ONE | Unified endpoint managment for all plaform
+- IBM MaaS360 | AI-driven security and mobile management
+- ManageEngine MDM | Centralized mobile device policy enforcement
+
+## Best Practices
+- Implement RBAC
+- Enabling MFA
+- Apply encyption for data protection // at rest or in transit
+- Automate patch management
+- Monitor device behavior
+
+## Challenges and Solutions
+- Device Sprawl | Implement strict device enrollment policies
+- User Privacy Concerns | Use containerization
+- Compliance management | Automate compliance enforcement through MDM policies
+
+# Threat Actor Tactics, Techniques and Procedures (TTPs)
+- Behaviors, methodologies and tools use by cybercriminals
+- Provides insight into evolving landscape of cyber threats
+- Enhances defensive strategies
+- Support incident response and forensic investigations
+
+## Key components
+- Tactics // the general objectives and motives of cyberattack
+- Techniques // the specific methods used to achiieve a tactic
+- Procedure // step-by-step process
+
+## Common Threat Actor Tactics
+- Initial Access // gaining entry through phishing, stolen credentials or exploit kits
+- Execution // running malicious code on a compromised system
+- Persistence // establishing footholds to maintain system access
+- Privilege escalation // gaining higher system privilege
+- Defense evasion // hiding malicious activies from security tools
+
+## Threat-Actor Techniques and Procedures
+- Credentials dumping
+- Lateral movement
+- Comman and control c2
+- Data exfiltration
+- Impact // disrupt operation through ransomware, wipes, or sabotage
+
+## Defensive Measures
+- Zero trust security
+- Network segmentation
+- Endpoint detection and resposense (EDR)
+
