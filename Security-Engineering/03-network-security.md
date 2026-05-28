@@ -212,5 +212,101 @@
 - Zero trust email frameworks
 - AI-based email security
 - Behavior-based threat intelligence to counter phishing
-`if using cloud-based, provider is mainly providing securities, but not the password polcies etc that can be configured; there's always pros and cons using onprem and cloud-based`
+- `if using cloud-based, provider is mainly providing securities, but not the password polcies etc that can be configured; there's always pros and cons using onprem and cloud-based`
+
+# Transport Layer, Cipher Mismatch, and PKI Issues
+
+## Secure Communication Channels
+- Use of encryption protocols such as TLS and PKI
+- Protects against eavesdropping attacks
+- Ensure compliance
+- Prevents unathorized access
+
+## Core Components of Seucre Communication Channels
+- TLS // Secure transmission over network
+- Cipher Suites
+- PKI // manages encryption keys and digital certificaties `both public and private`
+
+## Common TLS Issues
+1. Expired certicates
+2. SSL/TLS handshake errors
+3. Weak cipher suites
+4. Self-signed certs
+
+## TLS Mitigation Strategies
+- Regularly update
+- Use strong cipher suites
+- Enable OCSP stapling // Online Certificate Status Protocol `improving speed and validation`
+
+## Cipher Mismatch
+- When server and client cannot agree on common algo
+- Results SSL/TLS failure
+
+## Troubleshooting Cipher Mismatch
+- Verified supported cipher suites
+- Update TLS versions
+- Modify web sever configs
+- Monitor encryption performance
+
+## PKI Challenges
+`held by entity owning the ...`
+- Misconfig CA
+- Poor key management
+- Failure to revoke compromised certificates
+
+## PKI Best Practices
+- Enforce strong auth
+- Automate life cycle management
+- Use hardware security module HSM
+- Conduct regular PKI audits
+
+# Network Infrastructure Security Issues
+- Focuses on protecting networking components
+- Reduce risks of cyber attacks
+- Ensures business continuity and compliance
+- Protects sensitive info and data
+
+## Common Network Infrastructure Security Issues
+- Cryptographic vuln
+- DDoS attacks
+- ACL misconfig
+- Resource exhaustion
+
+## Key Cryptophic Risk
+- Use of weak algo
+- Improper key management
+- Lack of encryption for sensititive data
+- Failure to rotate keys
+
+## Mitigation Strategies
+- Adopt strong encryption standards
+- Implement robust key managemenet
+- Use end-to-end encryption for data transmission
+- Regularly audit implementation
+
+## Understanding DDoS attacks
+- Volumetric attacks
+- Protocol attakcs
+- Application layer attacks
+
+## Resource Exhaustion Tactics
+- Memory exhaustion
+- CPU overload
+- Session Hijacking
+
+## Prevention DDoS
+- Deploy mitigation solutions (Cloudflare, Akamai etc)
+- Implement rate limiting
+- Use CDN to distribute network traffic
+
+## Common ACL Misconfig
+- Overly permissive rules
+- Blocking legitimate traffic
+- Lack of logging and monitoring
+
+## Best practices for ACL Management
+- Apple PoLP
+- Regularly review and update ACL rules
+- Utilize log monitoring
+- Implement multi-layer security policies for redundancy
 
