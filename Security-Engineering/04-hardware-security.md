@@ -168,5 +168,72 @@ Platform and Hardware Security
 - Enhanced regulatory focus on data sovereignty and encryption
 - Greater adoption of cloud-native encrpytion solutions
 
-#
+# Harware Secutiy and Resilience
+- Protects physical computing devices from tampering
+- Enhances the overall security posture of computing systems
+- Protects against firmware-based attacks and hardware-level threats
+- Enhaces operational continuity and system integrity
 
+## Key Components
+- Self-encrypting drives (SED) // no need for bitlocker, much more resilient compared with software-level encrypt
+- Secure boot and measured boot
+- Self-healing hardware // redundancy etc
+- Tamper detection and countermeasures
+
+## Self-Encrypting Drives
+- Use hardware-based encryption
+- No need for software-based encryption solutions
+- Securely wipe drive contents instantly // cyryptographic wipe
+- Meet data protection standards
+
+## Sescure Boot and Measured Boot
+### ***Secure Boot***
+- Ensure that only trusted software isloaded during boot process
+- Prevents rootkits and firmware attacks
+
+### ***Measured Boot***
+- Records boot measurements to ensure integrity
+- Provides remote attestation
+
+## Self-Healing Hardware and Tamper Detection
+### ***Self-Healing Hardware***
+- Use autoamted diagnostics and recovery machanism
+- Reduces downtime by repairing systems components dynamically
+- Ex. Redundant storage controller, failover processors
+
+### ***Tamper Detection and Countermeasures***
+- Detects unauthorzied physical access or modifications
+- Uses sensors to trigger alerts or disable compromised components
+- Ex. Applcation in military-grade security, IoT, and enterprise servers
+
+# Hardware Threat-Actor TTPS
+- Attackers use different exploits in hardware systems
+- Exploiting hardware vulnerabilities can lead to persistent threats and deep system compromise
+- Attackers can use hardware attacker to bypass traditional software-based sec measures
+- Securing hardware prevents firmware manipulation
+
+## Key Attack Vectors
+- Firmware exploitation
+- Physical device tampering // example keylogger
+- Electromagnetic attacks
+
+## Common Hardware Threat ACtor Techniques
+- Firmware Tampering
+- Shimming attacks // modification between hardware components
+- USB-based attacks
+
+## Advanced Hardware Threat Techniques
+- BIOS/UEFI Exploits
+- Memory-based attacks // cold boot attacks
+- EMI attacks // electromagnetic pulses to cause damage
+
+## Best Practices
+- Regular firmware audits // chipsec to analyze and verify
+- Strict physical security controls // using lock cabinents and video surveillance system
+- Zero Trust approach to peripheral devices
+- Continuous monitoring
+
+## Emerging Solutions
+- AI-driven anomaly detection in hardware security
+- Enhaced encryption techniques for mem and firmware protection
+- Secure supply chain mechanisms to detect tampering before deployment
