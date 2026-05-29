@@ -27,15 +27,15 @@ Platform and Hardware Security
 - Verifies the trustworthiness of virtual workloads
 
 ## Comparison
-* `TPM`
+**TPM**
 - Disk encryption: protecting Bitlocker and LUKS key storage
 - Device authentication: ensuring secure identity for networked systems
 - Remote attestation: verifying the integrity of remote devices
-* `HSM`
+**HSM**
 - Secure payments: used in banking for encrypting transactions
 - PKI and certificate management: protecting certificate authority private keys
 - Cloud security: HSM as a service in cloud environments
-* `vTPM`
+**vTPM**
 - Performance overhead: software-based security introduces latency
 - Isolation concerns: ensuring vTPM is properly sandboxed in multi-tenant environment
 - Key management complexity: requires integration with extenal HSM solutions for security
