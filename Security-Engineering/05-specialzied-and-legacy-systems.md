@@ -175,3 +175,199 @@
 - Secure development practices for IoT manufacturers
 - Broader industry adoption of IoT security frameworks // NIST ......
 - Rising demand for autoamted threat detection in IoT environments
+
+# System on Chip Security
+- Multiple hardware and software components on a signle integrated circuit // mem, processors, IO
+- Incrasing adoption of SoC in IoT, mobile and embedded systems
+- Security risks arise due to the complexity and integration of multiple subsystems
+- Security vuln can lead to data leaks, unauth access, and device manipulation
+
+## Common SoC applications
+- Mobile devices
+- Automotive control systems
+- Industrial control and automation like PLC
+- Smart home and IoT devices
+
+## Security Risks and Threats in SoC Designs
+- Harware Trojans
+- Side-channel attacks
+- Firmware manipulation
+- Insecure debug interfaces
+- Supply chain risks
+
+## Best Practices for Securing SoC Architecture
+- Trusted execution environments TEE // isolating senstitive operations from non-secure components
+- Hardware root of trusdt // using cryptog modules for secure boot and key management
+- Secure firmware updates
+- Access control and isolation
+- Real-time monitoring // integrating threat detection mechanism
+
+## Challenges and Solutions
+- Hardware Backdoors | Implement strict supply chain security measures
+- Power Analysis Attacks | Use side-channel attack mitigation techniques
+- Debug Port Exploits | Disable or restrict debug interfaces post-manufacturing
+
+## Trend in SoC Security
+- AI-enhanced security monitoring
+- Post-quantum cryptography integration
+- Blockchain for secure supply chains
+- Zero Trust SoC design
+
+## Key Considerations for the Future
+- Growing regulatory scrutiny on semiconductor security
+- Need for open-source security validation frameworks
+- Advancements in silicon-based security measures to prevent reverse engineering
+
+# Embedded Systems
+- Specialized computing devices designed to perform dedicated functions within larger mechanical or electrical systems
+- Integral to critical infra, healthcare, automotive and industrial automation
+- Security breaches can have severe consequences, including safety risk and data exporsure and operational disruption
+- Often targeted because of weak sec and lack of updates
+
+## Common Use Cases
+- Industrial control systems 
+- Medical devices and wearables // pacemaker etc
+- Automotive electronics control units ECU's // for vehicle safety
+
+## Common Security Challenges
+- Lack of Regular Updates
+- Weak authentication mechanisms
+- Insecure communication channels // MITM attacks
+- limited processing power
+- Physical security risks // usually deployed in the field and can be easily tamper with
+
+## Best Practices
+- Secure boot and firmware integrity // if possible
+- RBAC
+- Hardware root of trust // validate the integrity of the systems
+- Data encryption // data in rest and data in transit
+- Periodic security audits // checking security and vulnerabilities
+
+## Challengs and Solutions
+- Unpatched Vuln | Enable over-the-air OTa firmware updates
+- Weak authentication | implement MFA if possible
+- Data exposure | Encrypt all communication using TLS
+- Resource Constraints | Optimize lightweight security protocols like ECC 
+
+## Emerging Trends
+- AI-driven threat detection
+- Post-quantum cryptography
+- Edge security enhancements
+- Blockchain for embedded systems // ledgers etc
+
+## Industry Considerations
+- Stricter compliance requirements for embedded systems manufacturers
+- Growing emphasis on security by design principle
+- Expansion of automated security verification
+
+# Wireless Technologies and RF Security
+- Protecting communication channel from eavesdropping, interference and malicious attacks
+- Wireless networks are susceptible to interception and unauth access
+- RF tech, including IoT and industrial automation are frequest targets
+- Secure wireless is integral for data security
+
+## Common Wireless Technologies at Risk
+- Wifi 802.11 standards
+- Bluetooth and BLE // commonly found on wearable devices
+- Zigbee and Z-wave // for smarthomes and IoT applications
+- Cellular networks // 4G/5G security concerns
+
+## Security Threats to Wirelss and RF communications
+- Eavedropping // encryp
+- MITM // On-path attacks
+- Rouge Acces Points // APs
+- Jamming and interference
+- Replay attacks
+
+## Best Practices for Securing Wireless and RF Networks
+- Enable WPA3 Encryption or WPA2 // strongest
+- Use strong authentication // enterprise mode in radius
+- Regularly update firmware
+- Disable SSID broadcasting
+- Conduct RF signal monitoring // spectrum analysis tools
+
+## Challenges and Solutions
+- Weak Encryption | Use AES-256 for secure comms
+- Rouge APS | Deploy wireless intrusion prevention systems WIPS
+- Signal Jamming | Implement frequesncy-hopping spread spectrum FHSS
+- IoT Device Security | Use whitelisting
+
+## Emerging Trends
+- 6G security innovations // future proofing
+- AI-driven threat detection
+- Blockchain for secure wireless transactions
+- Quantum-safe encryption
+
+## Industry Consideration
+- Increasing use of Zero Trust security models
+- Expanding regulations ofr IoT and wireless security compliance
+- Integration of biometric auth for secure wireless access
+
+# Industry Specific Security Challengs
+- Each type of Industry faces different challenges
+- Vary wildly
+- Each has distinct regulatory, operational and technical constraints
+- Cyberattacks on critical industries can cause widespread disruption
+- Addressing sector-specific risk improves resilience and compliance
+
+## Industries Covered
+- Utilities and energy // critical infra to nation state attacks
+- Transportation // GPS hacking and spoofing, Vehicle access spoofing
+- Healthcare // maintaining PII privacy, IoT devices vuln to attacks
+- Manufacturing // ransomware or sabotage, any length of downtime is costly
+- Financial services
+- Government and Defense // targets of espionage, data theft etc
+
+## Security Risks Across Critical Industries
+### ***Utilities and Energy***
+- SCADA and ICS vuln
+- Nation-state cyber threats targeting grid infra
+- Randomware targeting industrial control systems
+
+### ***Transportation***
+- GPS spoofing and vehicle ocmmunication hijacking
+- Vuln in connected/autonomous vehicles
+- Cyberattacks on airline and railway control systems
+
+### ***Healthcare***
+- Data breaches of electronic health records EHRs
+- Medical device security and ransomwar tageting hospitals
+- Compliance with HIPAA and GDPR
+
+### ***Manufacturing***
+- Industrial espionage and IP theft
+- Supply chain vuln in OT systems
+- Secure IoT device integration in smart factories
+
+### ***Financial Services
+- Fraudulent transactions and identity theft
+- DDoS attacks on banking infra
+- Meeting compliance standards such as PCI-DSS
+
+### ***Government and Defense***
+- Nation-state cyber warface threats
+- Data breaches in critical government agencies
+- Securing classified info and cloud migration risks
+
+## Best Practices for any Industry
+- Zero Trust architecture // strict verification of users and devices
+- Regulatory compliance and auditing
+- Cybersecurity awareness training
+- Redundant security layers // MFA, encryption and endpoint detection
+- Supply chain risk management // vetting third-party vendors
+
+## Challenges and Solutions
+- Legacy System Risk | Implement segmentation and virtual patching
+- High Compliance Demands | Automate compliance monitoring and audits
+- IoT and connected device risk | Enforce strict access controls and secure firmware updates
+
+## Emerging Trends
+- AI-driven threat detection
+- Cloud and edge security features 
+- Quantum-resistant cryptography
+- Cyber resilience planning
+
+## Key Consideration for the Future
+- Strengthening public-private cybersecurity partnership
+- More stringest government regulation on industry security
+- Expanding focus on proactive cyber therat intelligence
